@@ -6,13 +6,21 @@ namespace MVP_example.Framework.ActionFilterPanel.UserControls
 {
     public partial class ControlGrouping : UserControl
     {
+        public event EventHandler<bool> RaiseExpandCollapse;
+
         private Boolean _isExpanded = true;
 
         public ControlGrouping()
         {
             InitializeComponent();
         }
-        
+
+        public string HeaderText
+        {
+            get { return lblHeader.Text; } 
+            set { lblHeader.Text = value; }
+        }
+
         private void CollapsePanel()
         {
             if (_isExpanded)
@@ -25,6 +33,7 @@ namespace MVP_example.Framework.ActionFilterPanel.UserControls
                 _isExpanded = true;
                 pbExpandCollapse.Image = Resources.CollapseSmall;
             }
+            RaiseExpandCollapse(this, _isExpanded);
         }
 
         private void lblHeader_Click(object sender, EventArgs e)
