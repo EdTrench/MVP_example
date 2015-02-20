@@ -33,24 +33,28 @@
             // 
             // ActionTableLayoutPanel
             // 
-            this.ActionTableLayoutPanel.Location = new System.Drawing.Point(4, 3);
+            this.ActionTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
             this.ActionTableLayoutPanel.Name = "ActionTableLayoutPanel";
-            this.ActionTableLayoutPanel.Size = new System.Drawing.Size(170, 339);
+            this.ActionTableLayoutPanel.Size = new System.Drawing.Size(181, 351);
             this.ActionTableLayoutPanel.TabIndex = 0;
             // 
             // View
             // 
             this.Controls.Add(this.ActionTableLayoutPanel);
             this.Name = "View";
-            this.Size = new System.Drawing.Size(180, 351);
+            this.Size = new System.Drawing.Size(184, 354);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private MVP_example.Framework.ActionFilterPanel.UserControls.ActionTableLayoutPanel ActionTableLayoutPanel;
+        internal MVP_example.Framework.ActionFilterPanel.UserControls.ActionTableLayoutPanel ActionTableLayoutPanel;
 
-        
+
+        //private MVP_example.Framework.ActionFilterPanel.UserControls.ActionTableLayoutPanel ActionTableLayoutPanel;
+
+
+
     }
 }

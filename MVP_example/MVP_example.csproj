@@ -69,6 +69,14 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Framework\ActionFilterPanel\Action\ActionControlGrouping.cs" />
+    <Compile Include="Framework\ActionFilterPanel\Action\Controls\IActionControl.cs" />
+    <Compile Include="Framework\ActionFilterPanel\Action\Controls\LinkLabel\LinkLabelActionControl.cs" />
+    <Compile Include="Framework\ActionFilterPanel\Action\Controls\LinkLabel\UserControls\LinkLabelActionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Framework\ActionFilterPanel\Action\Controls\LinkLabel\UserControls\LinkLabelActionControl.Designer.cs">
+      <DependentUpon>LinkLabelActionControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Framework\ActionFilterPanel\ControlGrouping.cs" />
     <Compile Include="Framework\ActionFilterPanel\UserControls\ActionTableLayoutPanel.cs">
       <SubType>UserControl</SubType>
@@ -92,6 +100,7 @@
     </Compile>
     <Compile Include="Presenter\Framework\IViewActionPanelEventListener.cs" />
     <Compile Include="Presenter\Framework\IViewEventListener.cs" />
+    <Compile Include="Presenter\Framework\ViewAttacher.cs" />
     <Compile Include="Presenter\Garden\Garden.cs" />
     <Compile Include="Presenter\Garden\IGarden.cs" />
     <Compile Include="View\Framework\IDirtyCheckerView.cs" />
@@ -115,6 +124,9 @@
     <Compile Include="View\Garden\IGarden.cs" />
     <EmbeddedResource Include="Builder\ActionPanel\View.resx">
       <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Framework\ActionFilterPanel\Action\Controls\LinkLabel\UserControls\LinkLabelActionControl.resx">
+      <DependentUpon>LinkLabelActionControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Framework\ActionFilterPanel\UserControls\ActionTableLayoutPanel.resx">
       <DependentUpon>ActionTableLayoutPanel.cs</DependentUpon>
@@ -153,6 +165,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Framework\ActionFilterPanel\Filter\" />
     <Folder Include="Presenter\Plant\" />
     <Folder Include="View\Plant\" />
   </ItemGroup>

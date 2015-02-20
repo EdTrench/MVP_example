@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using NHibernate.SqlCommand;
 
 namespace MVP_example.Framework.ActionFilterPanel
 {
-    public abstract  class ControlGrouping
+    public abstract class ControlGrouping
     {
 
         protected UserControls.ControlGrouping _controlGrouping;
@@ -14,9 +13,10 @@ namespace MVP_example.Framework.ActionFilterPanel
 
         protected abstract void AddSubControls();
         protected abstract void SetExpand(Boolean isExpanded);
-        protected abstract int NumberOfControls();
+        
+        public abstract int CountOfControls();
 
-        protected abstract System.Action _onRefresh();
+        protected System.Action _onRefresh;
 
         public ControlGrouping(string headerText,
             TableLayoutPanel tableLayoutPanel)
@@ -36,6 +36,11 @@ namespace MVP_example.Framework.ActionFilterPanel
             AddSubControls();
             AddEndSeperator();
             AutoSize();
+        }
+
+        public void SetRefreshDelegate(System.Action action)
+        {
+            _onRefresh = action;
         }
 
         private void AddHeaderLabel()

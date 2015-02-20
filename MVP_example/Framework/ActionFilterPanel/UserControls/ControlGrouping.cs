@@ -21,6 +21,21 @@ namespace MVP_example.Framework.ActionFilterPanel.UserControls
             set { lblHeader.Text = value; }
         }
 
+        public void SetHeaderLabel(string text)
+        {
+            lblHeader.Text = text;
+        }
+
+        public void SetHeaderVisibility(bool isVisible)
+        {
+            lblHeader.Visible = isVisible;
+        }
+
+        public void SetExpandCollapseVisibility(bool isVisible)
+        {
+            pbExpandCollapse.Visible = isVisible;
+        }
+
         private void CollapsePanel()
         {
             if (_isExpanded)

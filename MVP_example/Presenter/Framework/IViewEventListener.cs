@@ -1,5 +1,4 @@
-﻿
-namespace MVP_example.Presenter.Framework
+﻿namespace MVP_example.Presenter.Framework
 {
     interface IViewEventListener
     {

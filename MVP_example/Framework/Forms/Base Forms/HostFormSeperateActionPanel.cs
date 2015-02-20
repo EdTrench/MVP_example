@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using MVP_example.Framework.UserControls;
 
 namespace MVP_example.Framework.Forms.Base_Forms
 {
@@ -15,6 +8,17 @@ namespace MVP_example.Framework.Forms.Base_Forms
         public HostFormSeperateActionPanel()
         {
             InitializeComponent();
+        }
+
+        public StatusStrip StatusStrip
+        {
+            get { return HostFormStatusStrip ; }
+            set { HostFormStatusStrip = value; }
+        }
+
+        public HostPanel MainPanel
+        {
+            get { return HostMainPanel; }
         }
     }
 }

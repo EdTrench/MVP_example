@@ -38,6 +38,5 @@ namespace MVP_example.View.Garden
             hostPanel.Initialise();
         }
 
-       
     }
 }

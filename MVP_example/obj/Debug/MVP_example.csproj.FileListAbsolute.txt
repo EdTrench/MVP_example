@@ -1,12 +1,6 @@
 D:\wip\MVP_example\MVP_example\bin\Debug\MVP_example.exe.config
 D:\wip\MVP_example\MVP_example\bin\Debug\MVP_example.exe
 D:\wip\MVP_example\MVP_example\bin\Debug\MVP_example.pdb
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Properties.Resources.resources
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.View.Garden.Garden.resources
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.csproj.GenerateResource.Cache
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.exe
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.pdb
-D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.Forms.Base_Forms.HostFormSeperateActionPanel.resources
 D:\wip\MVP_example\MVP_example\bin\Debug\FluentNHibernate.dll
 D:\wip\MVP_example\MVP_example\bin\Debug\Iesi.Collections.dll
 D:\wip\MVP_example\MVP_example\bin\Debug\NHibernate.dll
@@ -15,5 +9,13 @@ D:\wip\MVP_example\MVP_example\bin\Debug\FluentNHibernate.xml
 D:\wip\MVP_example\MVP_example\bin\Debug\Iesi.Collections.xml
 D:\wip\MVP_example\MVP_example\bin\Debug\NHibernate.xml
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Builder.ActionPanel.View.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.Action.Controls.LinkLabel.UserControls.LinkLabelActionControl.resources
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.UserControls.ActionTableLayoutPanel.resources
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.UserControls.ControlGrouping.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.Forms.Base_Forms.HostFormSeperateActionPanel.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Properties.Resources.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.View.Garden.Garden.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.csproj.GenerateResource.Cache
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.exe
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.pdb
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.csprojResolveAssemblyReference.cache

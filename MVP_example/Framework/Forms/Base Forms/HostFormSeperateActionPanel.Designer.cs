@@ -31,7 +31,7 @@
             this.HostMainPanel = new MVP_example.Framework.UserControls.HostPanel();
             this.HostActionPanel = new MVP_example.Framework.UserControls.HostPanel();
             this.HostFormStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.HostFormStatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,18 +52,18 @@
             // HostFormStatusStrip
             // 
             this.HostFormStatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
+            this.ToolStripStatusLabel});
             this.HostFormStatusStrip.Location = new System.Drawing.Point(0, 360);
             this.HostFormStatusStrip.Name = "HostFormStatusStrip";
             this.HostFormStatusStrip.Size = new System.Drawing.Size(980, 22);
             this.HostFormStatusStrip.TabIndex = 2;
-            this.HostFormStatusStrip.Text = "statusStrip1";
+            this.HostFormStatusStrip.Text = "HostFormStatusStrip";
             // 
-            // toolStripStatusLabel1
+            // ToolStripStatusLabel
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.ToolStripStatusLabel.Name = "ToolStripStatusLabel";
+            this.ToolStripStatusLabel.Size = new System.Drawing.Size(115, 17);
+            this.ToolStripStatusLabel.Text = "ToolStripStatusLabel";
             // 
             // HostFormSeperateActionPanel
             // 
@@ -87,6 +87,6 @@
         private UserControls.HostPanel HostMainPanel;
         private UserControls.HostPanel HostActionPanel;
         private System.Windows.Forms.StatusStrip HostFormStatusStrip;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel ToolStripStatusLabel;
     }
 }

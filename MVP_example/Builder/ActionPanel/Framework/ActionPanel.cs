@@ -6,7 +6,7 @@ namespace MVP_example.Builder.ActionPanel.Framework
 {
     public class ActionPanel
     {
-        private IList<ActionControlGrouping> _actionControlGroupings;
+        protected IList<ActionControlGrouping> _actionControlGroupings;
         private readonly ActionTableLayoutPanel _actionTableLayoutPanel;
 
         protected ActionPanel(ActionTableLayoutPanel actionTableLayoutPanel)
@@ -17,8 +17,12 @@ namespace MVP_example.Builder.ActionPanel.Framework
 
         public void Refresh()
         {
-            
-            
+            _actionTableLayoutPanel.ClearActionPanelComponents();
+            foreach (ActionControlGrouping actionControlGrouping in _actionControlGroupings)
+            {
+                _actionTableLayoutPanel.RegisterActionControlGroup(actionControlGrouping);
+            }
+            _actionTableLayoutPanel.BuildActionPanelComponents();
         }
     }
 }
