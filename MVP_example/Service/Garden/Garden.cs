@@ -1,4 +1,6 @@
-﻿namespace MVP_example.Service.Garden
+﻿using System;
+
+namespace MVP_example.Service.Garden
 {
     class Garden
     {
@@ -14,7 +16,7 @@
 
         public void Save()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

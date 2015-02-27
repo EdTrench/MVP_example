@@ -20,5 +20,10 @@ namespace MVP_example.Framework.Forms.Base_Forms
         {
             get { return HostMainPanel; }
         }
+
+        public HostPanel ActionPanel
+        {
+            get { return HostActionPanel; }
+        }
     }
 }

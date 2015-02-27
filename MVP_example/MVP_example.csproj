@@ -100,9 +100,18 @@
     </Compile>
     <Compile Include="Presenter\Framework\IViewActionPanelEventListener.cs" />
     <Compile Include="Presenter\Framework\IViewEventListener.cs" />
+    <Compile Include="Presenter\Framework\IViewPopulator.cs" />
+    <Compile Include="Presenter\Framework\IViewReader.cs" />
+    <Compile Include="Presenter\Framework\ViewActionPanelEventListener.cs" />
     <Compile Include="Presenter\Framework\ViewAttacher.cs" />
+    <Compile Include="Presenter\Framework\ViewPopulator.cs" />
+    <Compile Include="Presenter\Framework\ViewReader.cs" />
     <Compile Include="Presenter\Garden\Garden.cs" />
     <Compile Include="Presenter\Garden\IGarden.cs" />
+    <Compile Include="Presenter\Garden\ViewActionPanelEventListener.cs" />
+    <Compile Include="Presenter\Garden\ViewEventListener.cs" />
+    <Compile Include="Presenter\Garden\ViewPopulator.cs" />
+    <Compile Include="Presenter\Garden\ViewReader.cs" />
     <Compile Include="View\Framework\IDirtyCheckerView.cs" />
     <Compile Include="Framework\UserControls\HostPanel.cs">
       <SubType>Component</SubType>
