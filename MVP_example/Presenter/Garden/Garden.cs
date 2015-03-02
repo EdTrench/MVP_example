@@ -1,8 +1,6 @@
 ﻿using System;
-using FluentNHibernate.Mapping;
 using MVP_example.Framework.Forms.Base_Forms;
 using MVP_example.Presenter.Framework;
-using NHibernate.Mapping.ByCode.Impl;
 
 namespace MVP_example.Presenter.Garden
 {
@@ -16,18 +14,17 @@ namespace MVP_example.Presenter.Garden
         private Builder.ActionPanel.Garden.Garden _gardenActionPanel;
         private Framework.IViewEventListener _viewEventListener;
         private Framework.IViewActionPanelEventListener _viewActionPanelEventListener;
-        private Service.Garden.Garden _gardenService;
-
+        
         public View.Garden.IGarden GardenView { get; set; }
         public Model.Garden.Garden GardenModel { get; private set; }
 
         public Garden(NHibernate.ISession sx,
             HostFormSeperateActionPanel hostFormSeperateActionPanel,
-            Service.Garden.Garden gardenService)
+            Model.Garden.Garden garden)
         {
             _sx = sx;
             _hostFormSeperateActionPanel = hostFormSeperateActionPanel;
-            _gardenService = gardenService;
+            GardenModel = garden;
         }
 
         public void Show()
@@ -60,9 +57,10 @@ namespace MVP_example.Presenter.Garden
 
         public void Save()
         {
+            var gardenService = new Service.Garden.Garden(_sx, GardenModel);
             using (NHibernate.ITransaction tx = _sx.BeginTransaction())
             {
-                _gardenService.Save();
+                gardenService.Save();
                 tx.Commit();
             }
         }

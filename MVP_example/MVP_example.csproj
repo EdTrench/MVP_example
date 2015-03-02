@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MVP_example.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FluentNHibernate">
       <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
@@ -62,6 +65,7 @@
     <Compile Include="Builder\ActionPanel\View.Designer.cs">
       <DependentUpon>View.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\nHibernate\Factory.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +137,9 @@
     <Compile Include="View\Garden\IGarden.cs" />
     <EmbeddedResource Include="Builder\ActionPanel\View.resx">
       <DependentUpon>View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Framework\ActionFilterPanel\Action\Controls\LinkLabel\UserControls\LinkLabelActionControl.resx">
       <DependentUpon>LinkLabelActionControl.cs</DependentUpon>

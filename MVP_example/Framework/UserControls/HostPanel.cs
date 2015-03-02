@@ -20,30 +20,30 @@ namespace MVP_example.Framework.UserControls
             _parentForm.FormClosing += FormClosing;
         }
 
-        public void AddUserControl(UserControl userControl)
-        {
-            if (Controls.Count == 0)
-            {
-                AddControl(userControl);
-            }
-            else if (Controls.Count == 1)
-            {
-                _controlCache = Controls[0];
-                UserControlChanged();
-                Controls.Clear();
-                AddControl(userControl);
-            }
-            else if (Controls.Count > 1)
-            {
-                throw new InvalidOperationException();       
-            }
-        }
+        //public void AddUserControl(UserControl userControl)
+        //{
+        //    if (Controls.Count == 0)
+        //    {
+        //        AddControl(userControl);
+        //    }
+        //    else if (Controls.Count == 1)
+        //    {
+        //        _controlCache = Controls[0];
+        //        UserControlChanged();
+        //        Controls.Clear();
+        //        AddControl(userControl);
+        //    }
+        //    else if (Controls.Count > 1)
+        //    {
+        //        throw new InvalidOperationException();       
+        //    }
+        //}
 
-        private void AddControl(Control control)
-        {
-            Controls.Clear();
-            Controls.Add(_controlCache);
-        }
+        //private void AddControl()
+        //{
+        //    Controls.Clear();
+        //    Controls.Add(_controlCache);
+        //}
 
         private void FormClosing(Object sender, FormClosingEventArgs e)
         {

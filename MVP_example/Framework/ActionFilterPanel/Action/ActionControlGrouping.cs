@@ -43,7 +43,7 @@ namespace MVP_example.Framework.ActionFilterPanel.Action
 
         public void ClearControls()
         {
-            _actionControls.Clear();
+            _actionControls =  new List<IActionControl>();
         }
 
         public override int CountOfControls()

@@ -5,9 +5,10 @@ namespace MVP_example.Framework.Forms.Base_Forms
 {
     public partial class HostFormSeperateActionPanel : Form
     {
-        public HostFormSeperateActionPanel()
+        public HostFormSeperateActionPanel(string formText)
         {
             InitializeComponent();
+            Text = formText;
         }
 
         public StatusStrip StatusStrip

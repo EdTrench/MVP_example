@@ -9,6 +9,7 @@ D:\wip\MVP_example\MVP_example\bin\Debug\FluentNHibernate.xml
 D:\wip\MVP_example\MVP_example\bin\Debug\Iesi.Collections.xml
 D:\wip\MVP_example\MVP_example\bin\Debug\NHibernate.xml
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Builder.ActionPanel.View.resources
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Form1.resources
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.Action.Controls.LinkLabel.UserControls.LinkLabelActionControl.resources
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.UserControls.ActionTableLayoutPanel.resources
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.Framework.ActionFilterPanel.UserControls.ControlGrouping.resources

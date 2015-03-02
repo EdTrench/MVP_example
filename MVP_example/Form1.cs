@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MVP_example
@@ -15,6 +8,14 @@ namespace MVP_example
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var sx = DataAccess.nHibernate.Factory.OpenSession();
+            var garden = new Model.Garden.Garden {Id = 1, Description = "Test Description", Name = "Test Name"};
+            var gardenService = new Service.Garden.Garden(sx, garden);
+            gardenService.Show();
         }
     }
 }
