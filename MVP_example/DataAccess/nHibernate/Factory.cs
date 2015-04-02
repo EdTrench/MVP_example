@@ -4,7 +4,7 @@ namespace MVP_example.DataAccess.nHibernate
 {
     static class Factory
     {
-        private const string AzureConnectionString = "Server=tcp:irktykc7ce.database.windows.net,1433;Database=Garden;User ID=Ed@irktykc7ce;Password=P@ssw0rd;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private const string AzureConnectionString = "Server=tcp:aa3odzvg0b.database.windows.net,1433;Database=Garden;User ID=Ed;Password=Pluto123;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         private static ISessionFactory _sessionFactory;
         
