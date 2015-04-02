@@ -44,6 +44,8 @@
             // 
             // HostActionPanel
             // 
+            this.HostActionPanel.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.HostActionPanel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.HostActionPanel.Location = new System.Drawing.Point(800, 2);
             this.HostActionPanel.Name = "HostActionPanel";
             this.HostActionPanel.Size = new System.Drawing.Size(177, 357);

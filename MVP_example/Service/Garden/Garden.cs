@@ -16,7 +16,7 @@ namespace MVP_example.Service.Garden
 
         public void Show()
         {
-            var hostForm = new Framework.Forms.Base_Forms.HostFormSeperateActionPanel(String.Format("Garden {0}", _garden.Id));
+            var hostForm = new Framework.Forms.Base_Forms.HostFormSeperateActionPanel(String.Format("Garden : {0}", _garden.Id));
             var presenter = new Presenter.Garden.Garden(_sx, hostForm, _garden);
             presenter.Show();
         }

@@ -7,7 +7,7 @@ namespace MVP_example.Builder.ActionPanel
     public partial class View : UserControl, IView
     {
         public HostPanel HostPanel { get; set; }
-        
+
         public View()
         {
             InitializeComponent();

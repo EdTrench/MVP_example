@@ -33,9 +33,11 @@
             // 
             // ActionTableLayoutPanel
             // 
-            this.ActionTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.ActionTableLayoutPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ActionTableLayoutPanel.ColumnCount = 1;
+            this.ActionTableLayoutPanel.Location = new System.Drawing.Point(3, 3);
             this.ActionTableLayoutPanel.Name = "ActionTableLayoutPanel";
-            this.ActionTableLayoutPanel.Size = new System.Drawing.Size(181, 351);
+            this.ActionTableLayoutPanel.Size = new System.Drawing.Size(178, 348);
             this.ActionTableLayoutPanel.TabIndex = 0;
             // 
             // View
