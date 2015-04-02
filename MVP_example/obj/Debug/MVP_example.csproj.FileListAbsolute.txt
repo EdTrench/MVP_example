@@ -19,3 +19,4 @@ D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.View.Garden.Garden.resource
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.csproj.GenerateResource.Cache
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.exe
 D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.pdb
+D:\wip\MVP_example\MVP_example\obj\Debug\MVP_example.csprojResolveAssemblyReference.cache

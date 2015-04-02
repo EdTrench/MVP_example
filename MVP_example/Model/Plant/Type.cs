@@ -8,6 +8,6 @@ namespace MVP_example.Model.Plant
 {
     class Type : Model
     {
-        public string Description { get; set; }
+        public virtual string Description { get; set; }
     }
 }

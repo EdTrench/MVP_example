@@ -13,8 +13,7 @@ namespace MVP_example
         private void button1_Click(object sender, EventArgs e)
         {
             var sx = DataAccess.nHibernate.Factory.OpenSession();
-            var garden = new Model.Garden.Garden {Id = 1, Description = "Test Description", Name = "Test Name"};
-            var gardenService = new Service.Garden.Garden(sx, garden);
+            var gardenService = new Service.Garden.Garden(sx, sx.Get<Model.Garden.Garden>(1));
             gardenService.Show();
         }
     }
